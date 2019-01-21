@@ -54,7 +54,7 @@ What upstream shim tag is this starting from:
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-[https://github.com/jongkyung/shim-review]
+[https://github.com/jongkyung/shim-review/releases/tag/Gooroom-shim-x64-20190120]
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
