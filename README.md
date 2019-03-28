@@ -49,7 +49,7 @@ Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
 -------------------------------------------------------------------------------
-[https://github.com/jongkyung/shim-review/releases/tag/Gooroom-shim-x64-20190120]
+[https://github.com/jongkyung/shim-review/releases/tag/Gooroom-shim-x64-20190328]
 
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
