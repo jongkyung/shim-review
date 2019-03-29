@@ -1,0 +1,34 @@
+From b2d12fbf7bbe85bed071f44f1e488791e7d8fb30 Mon Sep 17 00:00:00 2001
+From: "jongkyung.woo" <jkwoo@gooroom.kr>
+Date: Wed, 19 Sep 2018 16:34:25 +0900
+Subject: [PATCH] validate linux image by shim
+
+- grub_linuxefi_secure_validate
+
+Change-Id: I1f8625030d0702377330b063b5e86bf8fb7f4ecf
+---
+ grub-core/loader/i386/efi/linux.c | 8 ++++++++
+ 1 files changed, 6 insertions(+)
+
+diff --git a/grub-core/loader/i386/efi/linux.c b/grub-core/loader/i386/efi/linux.c
+index cfe380030..fe5f03580 100644
+--- a/grub-core/loader/i386/efi/linux.c
++++ b/grub-core/loader/i386/efi/linux.c
+@@ -209,6 +209,14 @@ grub_cmd_linux (grub_command_t cmd __attribute__ ((unused)),
+       grub_error (GRUB_ERR_FILE_READ_ERROR, N_("Can't read kernel %s"), argv[0]);
+       goto fail;
+     }
++
++  // validate linux image by shim
++  if (! grub_linuxefi_secure_validate (kernel, filelen))
++    {
++      grub_error (GRUB_ERR_ACCESS_DENIED, N_("%s has invalid signature"), argv[0]);
++      goto fail;
++    }
++
+ /*
+   if (! grub_linuxefi_check_shim_lock ())
+     {
+-- 
+2.11.0
+
