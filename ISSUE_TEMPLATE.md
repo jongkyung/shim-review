@@ -16,7 +16,7 @@ Make sure you have provided the following information:
 `[Gooroom OS]`
 
 ###### What is the origin and full version number of your shim?
-`[shim 15+1533136590.3beb971-0ubuntu1+grm1u1]`
+`[shim shim_15+1533136590.3beb971-7+deb10u1+grm2u1]`
 
 ###### What's the justification that this really does need to be signed for the whole world to be able to boot it:
 `[To make secure boot on Gooroom OS]`
@@ -40,10 +40,10 @@ Make sure you have provided the following information:
 `[no]`
 
 ###### What kernel are you using? Which patches does it includes to enforce Secure Boot?
-`[linux 4.9.110-3+deb9u6+grm1u2]`
+`[linux 4.19.118-2+deb10u1+grm2u1]`
 
 ###### What changes were made since your SHIM was last signed?
 `[no, It's first time]`
 
 ###### What is the hash of your final SHIM binary?
-`[sha256shum fb501b838fe9b91b6adfd9eaa5ff0c5824c7f802fcdc1f960d13a11f3a3db76c  ./shimx64.efi]`
+`[sha256shum 188556048f04004c6fbc20d85d6354aa62b176feb95eeaab5e38a82e365b5efe  ./shimx64.efi]`

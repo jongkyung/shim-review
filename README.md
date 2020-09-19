@@ -33,9 +33,9 @@ What's the justification that this really does need to be signed for the whole w
 -------------------------------------------------------------------------------
 Who is the primary contact for security updates, etc.
 -------------------------------------------------------------------------------
-- Name: Bongkyun Seo
-- Position: Gooroom OS Director
-- Email address: seobg10@gmail.com
+- Name: Gooroom
+- Position: Gooroom Director
+- Email address: gooroom@gooroom.kr
 - PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
 
 -------------------------------------------------------------------------------
@@ -49,7 +49,7 @@ Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
 -------------------------------------------------------------------------------
-[https://github.com/jongkyung/shim-review/releases/tag/Gooroom-shim-x64-20190328]
+[https://github.com/jongkyung/shim-review/releases/tag/Gooroom-shim-x64-20200919]
 
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
@@ -64,7 +64,7 @@ What patches are being applied and why:
 -------------------------------------------------------------------------------
 What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 -------------------------------------------------------------------------------
-[Debian 9 Stretch]
+[Debian 10 Stretch]
 
 -------------------------------------------------------------------------------
 Which files in this repo are the logs for your build?   This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
